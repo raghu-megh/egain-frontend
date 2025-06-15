@@ -21,7 +21,7 @@ const COLORS = [
 ];
 
 export default function FrequentVisitorsPage() {
-  const [days, setDays] = useState(7);
+  const [days, setDays] = useState(10);
   const [data, setData] = useState<DomainVisitDto[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

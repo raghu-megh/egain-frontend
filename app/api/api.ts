@@ -38,7 +38,9 @@ export interface CompanyInfoDto {
   employeeCount: number;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://egain-insights-backend-1047983983694.us-west1.run.app";
 
 export async function fetchVisitors(
   domain?: string,
