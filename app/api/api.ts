@@ -81,3 +81,13 @@ export async function fetchFrequentVisitors(
   if (!res.ok) throw new Error("Failed to load frequent visitors");
   return res.json();
 }
+
+export async function fetchCompanyByDomain(
+  domain: string
+): Promise<CompanyInfoDto> {
+  const res = await fetch(
+    `${BASE_URL}/api/companies/${encodeURIComponent(domain)}`
+  );
+  if (!res.ok) throw new Error();
+  return res.json();
+}
